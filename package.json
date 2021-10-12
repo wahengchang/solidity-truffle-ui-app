@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "lite-server",
     "start": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "node script/generateEnv.js"
   },
   "author": "",
   "license": "ISC",
