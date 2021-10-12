@@ -1,0 +1,7 @@
+contracts/.placeholder
+test/.placeholder
+build
+node_modules
+deploy_mnemonic.key
+.env
+**/**/env.js
