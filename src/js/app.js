@@ -40,7 +40,7 @@ App = {
     }
     // If no injected web3 instance is detected, fall back to Ganache
     else {
-      App.web3Provider = new Web3.providers.HttpProvider('https://ropsten.infura.io/v3/ff1678eb2ddb47a48d448c601ca59813');
+      App.web3Provider = new Web3.providers.HttpProvider(`https://ropsten.infura.io/v3/${NODE_ENV_INFURA_API_KEY}`);
     }
     web3 = new Web3(App.web3Provider);
     console.log(' -=-=-= inited initWeb3 -=-=-=')
