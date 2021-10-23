@@ -11,7 +11,7 @@
     "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run deploy:contract; node script/generateEnv.js",
-    "deploy:contract": "truffle compile; truffle migrate --network ropsten"
+    "deploy:contract": "npm install truffle; truffle compile; truffle migrate --network ropsten"
   },
   "author": "",
   "license": "ISC",
