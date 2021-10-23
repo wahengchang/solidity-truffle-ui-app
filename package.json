@@ -8,10 +8,11 @@
   },
   "scripts": {
     "dev": "lite-server",
-    "start": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run deploy:contract; node script/generateEnv.js",
-    "deploy:contract": "truffle compile; truffle migrate --network ropsten"
+    "start": "node script/generateEnv.js; lite-server",
+    "test": "truffle test",
+    "heroku-postbuild": "",
+    "deploy:contract": "truffle migrate --network ropsten",
+    "build:contract": "truffle compile"
   },
   "author": "",
   "license": "ISC",
