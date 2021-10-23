@@ -10,7 +10,7 @@
     "dev": "lite-server",
     "start": "node script/generateEnv.js; lite-server",
     "test": "truffle test",
-    "heroku-postbuild": "yarn deploy:contract",
+    "heroku-postbuild": "echo 'ok'",
     "deploy:contract": "truffle migrate --network ropsten",
     "build:contract": "truffle compile"
   },
