@@ -13,7 +13,7 @@ script:
   - echo 'Testing!'
   - yarn build:contract
   - yarn test
-  - yarn heroku-postbuild
+  - yarn deploy:contract
 deploy:
   provider: heroku
   api_key:
