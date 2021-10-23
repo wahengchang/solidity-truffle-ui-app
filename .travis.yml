@@ -11,6 +11,7 @@ script:
   - echo 'Installing Deps!'
   - yarn
   - echo 'Testing!'
+  - yarn build:contract
   - yarn test
   - yarn heroku-postbuild
 deploy:
