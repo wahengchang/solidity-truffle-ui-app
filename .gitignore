@@ -5,3 +5,4 @@ node_modules
 deploy_mnemonic.key
 .env
 **/**/env.js
+env.sh
